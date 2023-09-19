@@ -6,7 +6,15 @@ const person = {
 };
 
 // Write your code here, make sure the name of variables is exactly same as mentioned in the problem statement
-let team=[];
+const team = players;
+
+// Create a shallow copy of the 'players' array
+const team1 = [...players];
+
+// Create a shallow copy of the 'person' object
+const cap1 = { ...person };
+
+/*let team=[];
 for(let i in players)
 	{
 		team.push(i);
@@ -22,7 +30,7 @@ cap1.age=80;
 
 
 
-
+*/
 window.players = players;
 window.person = person;
 window.team = team;
